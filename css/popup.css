@@ -1,0 +1,50 @@
+@import url('https://rsms.me/inter/inter.css');
+html {font-family: 'Inter', sans-serif;}
+@supports (font-variation-settings: normal) {
+    html {font-family: 'Inter var', sans-serif;}
+}
+
+.mainPopup, body, html {
+    padding: 2px;
+    height: fit-content;
+    width: max-content;
+    background: white;
+    overflow-y: hidden;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+a, a:active {
+    background-color: RGB(0, 0, 0, 0);
+    color: black;
+    text-decoration: underline;
+    text-decoration-color: blue;
+    text-decoration-thickness: calc(1rem / 6);
+    text-decoration-skip-ink: auto;
+    text-underline-offset: -0.5px;
+    transition: 0.2s all;
+    animation-direction: alternate;
+    animation-timing-function: ease-in;
+}
+
+a:hover, a:focus {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.2s all;
+    animation-direction: alternate-reverse;
+    animation-timing-function: ease-in;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 0.5em;
+    ;
+    padding: 0
+}

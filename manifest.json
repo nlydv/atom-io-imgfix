@@ -1,0 +1,30 @@
+{
+  "name": "Atom.io — Image Fixer",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "description": "Just a few lines of javascript to fix all those broken image links on https://atom.io",
+  "homepage_url": "https://github.com/nlydv/atom-io-imgfix",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "default_locale": "en",
+  "background": {
+    "scripts": ["js/background.js"],
+    "persistent": false
+  },
+  "page_action": {
+    "default_icon": "icons/icon19.png",
+    "default_title": "IMG FIX",
+    "default_popup": "html/popup.html"
+  },
+  "permissions": ["https://atom.io/*"],
+  "content_scripts": [
+    {
+      "matches": ["https://atom.io/*"],
+      "run_at": "document_start",
+      "js": ["js/inject.js"]
+    }
+  ]
+}
