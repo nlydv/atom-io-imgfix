@@ -4,6 +4,9 @@ Browsing through Atom's online package & theme repositories to find a suitiable 
 Ever since I started using Atom, the images on the site have been broken.
 
 ## Installation
+
+Install via chrome's webstore at [this link](https://chrome.google.com/webstore/detail/atomio-%E2%80%94-image-fixer/dckhejcdhaojgaafhjmeengkkilgejma/related) or DIY:
+
 1. Clone this repo
 2. Go to Chrome's extension manager
 3. Click 'load unpacked' and select the cloned repo
