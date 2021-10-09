@@ -1,30 +1,35 @@
 {
   "name": "Atom.io — Image Fixer",
-  "version": "1.0.0",
-  "manifest_version": 2,
   "description": "Just a few lines of javascript to fix all those broken image links on https://atom.io",
+  "author": "Neel Yadav",
   "homepage_url": "https://github.com/nlydv/atom-io-imgfix",
-  "icons": {
-    "16": "icons/icon16.png",
-    "48": "icons/icon48.png",
-    "128": "icons/icon128.png"
-  },
-  "default_locale": "en",
+  "version": "2.0.0",
+  "manifest_version": 3,
   "background": {
-    "scripts": ["js/background.js"],
-    "persistent": false
+    "service_worker": "js/background.js"
   },
-  "page_action": {
-    "default_icon": "icons/icon19.png",
-    "default_title": "IMG FIX",
-    "default_popup": "html/popup.html"
+  "icons": {
+      "16": "icons/icon16.png",
+      "19": "icons/icon19.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
   },
-  "permissions": ["https://atom.io/*"],
+  "action": {
+    "default_title": "Atom.io Image Fix",
+    "default_popup": "html/popup.html",
+    "default_icon": {
+        "16": "icons/icon16.png",
+        "19": "icons/icon19.png",
+        "48": "icons/icon48.png",
+        "128": "icons/icon128.png"
+    }
+  },
+  "host_permissions": [ "https://atom.io/*" ],
   "content_scripts": [
     {
-      "matches": ["https://atom.io/*"],
-      "run_at": "document_start",
-      "js": ["js/inject.js"]
+      "matches": [ "https://atom.io/*" ],
+      "run_at": "document_idle",
+      "js": [ "js/content.js" ]
     }
   ]
 }
