@@ -1,10 +1,8 @@
 # A very niche chrome extension
-Browsing through Atom's online package & theme repositories to find a suitiable plugin got on my nerves.
-
-Ever since I started using Atom, the images on the site have been broken.
+Ever since I started using Atom, the images on the site have been broken. Browsing through Atom's online package & theme repositories to find a suitiable plugin got on my nerves.
 
 ## Installation
-> Intended for browsers that work with Chromium-based extensions (e.g. Google Chrome, Brave Browser, perhaps that one invite-only hipster browser you use that's still in beta)
+> Intended for browsers that work with Chromium-based extensions (e.g. Google Chrome, Brave Browser, perhaps that one invite-only hipster browser you use that's still in beta) but *should* work with Firefox (if installed manually).
 
 Install via chrome's webstore at [this link](https://chrome.google.com/webstore/detail/atomio-%E2%80%94-image-fixer/dckhejcdhaojgaafhjmeengkkilgejma) or DIY:
 
