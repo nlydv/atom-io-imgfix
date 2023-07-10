@@ -1,3 +1,6 @@
+> # ⚠️ Archived
+> The Atom text editor project was disbanded years ago and its website is no longer available, which renders this extension useless.
+
 # A very niche chrome extension
 Ever since I started using Atom, the images on the site have been broken. Browsing through Atom's online package & theme repositories to find a suitiable plugin got on my nerves.
 
